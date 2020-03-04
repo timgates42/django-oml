@@ -161,7 +161,7 @@ class ModelAdminOml(admin.ModelAdmin):
 
         # Store the log of the moderated model
         form.save_form_log_moderated()
-        # Change status if necesary
+        # Change status if necessary
         form.define_status_of_object(request.user)
 
         return form
